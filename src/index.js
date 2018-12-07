@@ -1,12 +1,4 @@
-import { cube } from './math.js';
 
+import './main.scss';
 
-
-
-
-
-
-
-
-
-
+console.log('run!')
