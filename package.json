@@ -1,31 +1,29 @@
 {
-  "name": "webpack-demo",
+  "name": "webpack",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "repository": "git@github.com:bichaorui/webpack.git",
+  "author": "BiChaorui <abcd_627360647@qq.com>",
+  "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^1.0.0",
-    "css-loader": "^1.0.1",
-    "express": "^4.16.4",
+    "css-loader": "^2.0.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-middleware": "^3.4.0",
-    "webpack-dev-server": "^3.1.10"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack-dev-server --open"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.5"
+  }
 }
