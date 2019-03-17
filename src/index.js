@@ -1,9 +1,9 @@
-console.log('run');
+import ReactDOM from 'react-dom';
+import React, {Component} from 'react';
 
-const a = [1,2,3,4];
-a.map(v => {
-  console.log(v);
-});
+import Main from './router/index'
 
-
-
+ReactDOM.render(
+  <Main/>,
+  document.getElementById("root")
+);
